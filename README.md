@@ -1,5 +1,7 @@
 # del-bert-transformers
 
+based on code here:  https://www.analyticsvidhya.com/blog/2020/10/simple-text-multi-classification-task-using-keras-bert/
+
 some notes
 
 you can train the model from either cli v2 or pipelines and then you need to register the model using the Portal.  then in score.py (one in each directory), 
