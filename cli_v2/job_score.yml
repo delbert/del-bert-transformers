@@ -1,0 +1,10 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: 
+  local_path: src
+command: >-
+  python score.py
+environment: azureml:tf-bert-nlp:2
+compute: azureml:gpu-cluster
+display_name: tensorflow-bert-text-scoring
+experiment_name: tensorflow-bert-text-scoring
+description: https://www.analyticsvidhya.com/blog/2020/10/simple-text-multi-classification-task-using-keras-bert/
