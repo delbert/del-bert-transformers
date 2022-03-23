@@ -4,8 +4,6 @@ import sys
 import datetime
 import numpy as np
 import pandas as pd
-import tensorflow as tf
-import tensorflow_hub as hub
 
 from azureml.core import Dataset , Datastore , Model , Run
 
