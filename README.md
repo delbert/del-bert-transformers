@@ -35,8 +35,12 @@ the train.ipynb does the Model training
 the datasets.ipynb converts json datasets into csv datasets and it creates a new Environment from a dockerfile (dockerfile.txt)
 
 the batch_scoring_pipeline.ipnb is divided into sections which:
---builds the scoring pipeline and submits it as an Experiment
---publishes the scoring pipeline to a ReST endpoint
---calls the pipeline
---calls the pipeline using stand-alone code that can be translated into R
+*builds the scoring pipeline and submits it as an Experiment
+*publishes the scoring pipeline to a ReST endpoint
+*calls the pipeline
+*calls the pipeline using stand-alone code that can be translated into any language
+
+the batch_scoring_pipeline also calls one of two Python scripts:
+*score.py to score the example file
+*hello-score.py which is a minimal hello-world script that reads the input parameter (file) and creates an output file (based on current date/time)
 
